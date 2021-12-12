@@ -5,6 +5,8 @@
 
 提供具有中国特色的休假安排或者工作日查询。
 
+Minnanalee: 在原作者基础上，增加了Holiday（time.Time)(bool, string, error)接口，导出节日名称
+
 ## Install
 
     go get github.com/bastengao/chinese-holidays-go
