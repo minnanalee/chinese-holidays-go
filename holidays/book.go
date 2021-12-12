@@ -28,7 +28,8 @@ func (b *book) IsHoliday(d time.Time) (bool, error) {
 	e := b.findEvent(d)
 
 	if e == nil {
-		return isWeekend(d), nil
+		//return isWeekend(d), nil
+		return false, nil
 	}
 
 	return e.isHoliday(), nil
