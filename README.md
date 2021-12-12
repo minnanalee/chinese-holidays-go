@@ -5,7 +5,12 @@
 
 提供具有中国特色的休假安排或者工作日查询。
 
-Minnanalee: 在原作者基础上，增加了Holiday（time.Time)(bool, string, error)接口，导出节日名称
+Minnanalee: 在原作者基础上，
+增加了Holiday（time.Time)(bool, string, error)接口，
+Book可以导出节日名称，Book的IsHoliday，普通周末，返回false
+Cache、Multiple没有实现节日名称。
+
+
 
 ## Install
 
