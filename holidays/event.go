@@ -23,7 +23,7 @@ type event struct {
 	Range []string
 }
 
-type EventExport struct { //自定义接口 minnanalee1
+type EventExport struct { //自定义接口 minnanalee2
 	Name  string
 	Type  string
 	Range []string
