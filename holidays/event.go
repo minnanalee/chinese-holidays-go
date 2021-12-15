@@ -23,6 +23,12 @@ type event struct {
 	Range []string
 }
 
+type EventExport struct {
+	Name  string
+	Type  string
+	Range []string
+}
+
 func (e event) isHoliday() bool {
 	return e.Type == typeHoliday
 }

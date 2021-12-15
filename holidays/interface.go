@@ -9,6 +9,6 @@ type Queryer interface {
 
 	// IsWorkingday checks given date is working day or not.
 	IsWorkingday(date time.Time) (bool, error)
-	
-	Holiday(date time.Time)(bool,string, error)
+
+	Holiday(date time.Time) (EventExport, bool)
 }

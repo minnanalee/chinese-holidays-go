@@ -63,12 +63,16 @@ func _key(d time.Time) string {
 	return d.Format("2006-01-02")
 }
 
-func (b *book) Holiday(d time.Time)(bool,string,error) {
+func (b *book) Holiday(d time.Time) (EventExport, bool) {
+	var ep EventExport
 	e := b.findEvent(d)
 
 	if e == nil {
-		return false, "", nil
+		return ep, false
 	}
+	ep.Type = e.Type
+	ep.Range = e.Range
+	ep.Range = e.Range
 
-	return e.isHoliday(),e.Name,nil
+	return ep, true
 }
