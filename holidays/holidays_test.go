@@ -1,6 +1,7 @@
 package holidays
 
 import (
+	"fmt"
 	"testing"
 	"time"
 )
@@ -15,6 +16,9 @@ func TestIsHoliday(t *testing.T) {
 	if !result {
 		t.Fail()
 	}
+
+	fmt.Println(Holiday(d))
+
 }
 
 func TestIsWorkingday(t *testing.T) {
