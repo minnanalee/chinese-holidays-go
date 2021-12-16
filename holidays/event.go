@@ -3,6 +3,7 @@ package holidays
 import (
 	"fmt"
 	"time"
+	_ "time/tzdata"
 )
 
 const local = "Asia/Shanghai"
