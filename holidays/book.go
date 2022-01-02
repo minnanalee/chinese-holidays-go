@@ -66,7 +66,7 @@ func _key(d time.Time) string {
 func (b *book) Holiday(d time.Time) (bool, string, []string) {
 	e := b.findEvent(d)
 
-	if e == nil {
+	if e == nil || e.Type == "workingday" {
 		return false, "", []string{""}
 	}
 	return true, e.Name, e.Range
